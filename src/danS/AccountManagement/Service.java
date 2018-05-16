@@ -14,6 +14,10 @@ public class Service {
 		accounts.put(nextID, accountToAdd);
 		nextID++;
 	}
+	public void addAccount(String firstName, String lastName, int accountNumber) {
+		accounts.put(nextID, new Account(firstName, lastName, accountNumber));
+		nextID++;
+	}
 	public void removeAccount(int id) {
 		accounts.remove(id);
 	}
