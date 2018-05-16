@@ -11,6 +11,11 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 	
+	@Override
+	public String toString()
+	{
+		return "Name: " + firstName + " " + lastName + "\nAccount Number: " + accountNumber + "\n";
+	}
 	public String getFirstName() {
 		return firstName;
 	}
