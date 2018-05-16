@@ -14,7 +14,7 @@ public class Account {
 	@Override
 	public String toString()
 	{
-		return "Name: " + firstName + " " + lastName + "\nAccount Number: " + accountNumber;
+		return "Name: " + firstName + " " + lastName + "\nAccount Number: " + accountNumber + "\n";
 	}
 	public String getFirstName() {
 		return firstName;

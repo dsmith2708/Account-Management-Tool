@@ -24,13 +24,15 @@ public class Service {
 	public HashMap<Integer, Account> getAccounts() {
 		return accounts;
 	}
-	public void printAccounts() {
+	public String printAccounts() {
+		String returnString = "";
 		Set set = accounts.entrySet();
 		Iterator iterator = set.iterator();
-	      while(iterator.hasNext()) {
-	         Map.Entry mentry = (Map.Entry)iterator.next();
-	         System.out.println(mentry.getValue().toString());
-	      }
+	    while(iterator.hasNext()) {
+	    	Map.Entry mentry = (Map.Entry)iterator.next();
+	    	returnString += mentry.getValue().toString();
+	    }
+	    return returnString;
 	}
 	
 }

@@ -8,7 +8,7 @@ public class MainClass {
 		Service service = new Service();
 		service.addAccount(newAccount);
 		service.addAccount("George", "Hardy", 23432);
-		service.printAccounts();
+		System.out.println(service.printAccounts());
 		
 
 	}
