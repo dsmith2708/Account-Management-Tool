@@ -45,6 +45,6 @@ public class ServiceTest {
 	@Test
 	public void testNumAccountsWithName() {
 		testService.addAccount("Daniel", "Smith", 5);
-		assertEquals("incorrect string returned", 1, testService.getAccountWithName("Daniel"));
+		assertEquals("incorrect string returned", 1, testService.getAccountsWithName("Daniel"));
 	}
 }
