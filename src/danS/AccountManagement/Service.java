@@ -34,5 +34,7 @@ public class Service {
 	    }
 	    return returnString;
 	}
-	
+	public int getAccountsWithName(String nameToSearch) {
+		return (int) accounts.entrySet().stream().filter(x -> nameToSearch.equals(x.getValue().getFirstName())).count();
+	}
 }
